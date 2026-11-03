@@ -1,0 +1,5 @@
+{
+  "v": 1,
+  "payload": "{\u0022v\u0022:1,\u0022seq\u0022:1,\u0022issuedAt\u0022:\u00222026-11-03T13:23:32.7016012\u002B00:00\u0022,\u0022validUntil\u0022:null,\u0022state\u0022:\u0022ok\u0022,\u0022appliesTo\u0022:\u0022*\u0022,\u0022minVersion\u0022:null,\u0022title\u0022:\u0022\u0022,\u0022message\u0022:\u0022\u0022,\u0022messageAr\u0022:\u0022\u0022,\u0022titleAr\u0022:\u0022\u0022,\u0022url\u0022:null,\u0022dismissible\u0022:true,\u0022maxOfflineDays\u0022:0,\u0022pollMinutes\u0022:0}",
+  "sig": "QR\u002B\u002Bcv8dl52rhF/CpT/38pJr9CC7wFlukkhGe6d\u002BcRbIDav3Vto91VGYiRXujkfpyYrof3G5jz9X1aGoMHw7Dw=="
+}
