@@ -2,7 +2,7 @@
 
 <img src=".github/assets/fetch-icon.png" width="96" height="96" alt="TechBites Fetch icon">
 
-# TechBites Fetch
+# TechBites Downloader
 
 **Download anything. Keep everything. Pay nothing.**
 
