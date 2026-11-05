@@ -112,7 +112,7 @@ nav{position:sticky;top:0;z-index:30;height:var(--nav);background:rgba(11,15,20,
 .panel .shot{margin-top:var(--s5);border-radius:var(--r);overflow:hidden;border:1px solid var(--line);background:var(--surface);box-shadow:0 30px 60px -30px rgba(0,0,0,.7)}
 .panel .shot img{width:100%}
 
-.hero h1{font-size:clamp(44px,11vw,104px);line-height:1.05;max-width:9ch}
+.hero h1{font-size:clamp(44px,11vw,104px);line-height:1.05;max-width:12ch}
 html[lang=en] .hero h1{line-height:.98}
 .hero h1 em{font-style:normal;color:var(--brand)}
 .hero .cta{display:flex;flex-wrap:wrap;gap:var(--s3);margin-top:var(--s6);align-items:center}
@@ -365,7 +365,7 @@ footer{border-top:1px solid var(--line);padding:var(--s6) 0;color:var(--faint);f
     (function raf(t){lenis.raf(t);requestAnimationFrame(raf)})(0);
     all('a[href^="#"]').forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();lenis.scrollTo(a.getAttribute('href'),{offset:-64})})});
   }
-  apply(lang);
+  apply(lang); setTimeout(function(){var b=$(".boot"); if(b) b.remove()},2200);
   loop();
 })();
 </script>
