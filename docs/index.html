@@ -285,15 +285,14 @@ footer{border-top:1px solid var(--line);padding:var(--s6) 0;color:var(--faint);f
   // intro: logo ring draws, arrow drops, headline rises word by word
   var ring=$('#ringPath'), len=ring.getTotalLength();
   gsap.set(ring,{strokeDasharray:len,strokeDashoffset:len});
+  gsap.set('.hero .rv',{opacity:1});
   var tl=gsap.timeline({defaults:{ease:'expo.out'}});
   tl.to(ring,{strokeDashoffset:0,duration:1.2,ease:'power3.inOut'})
     .from('#arrow',{y:-120,opacity:0,duration:.7,ease:'back.out(1.8)'},'-=.45')
     .from('#h1 .w>span',{yPercent:110,duration:1,stagger:.08},'-=.4')
-    .to('.hero .rv:not(.float)',{opacity:1,duration:.01},'<')
     .from('.hero p.lead,.hero .cta,.hero .meta',{y:24,opacity:0,duration:.9,stagger:.08},'-=.7')
     .from('#frame',{y:160,rotateX:24,opacity:0,duration:1.4},'-=.8')
-    .to('.float',{opacity:1,duration:.01},'-=.6')
-    .from('.float',{y:30,scale:.9,opacity:0,duration:.8,ease:'back.out(1.6)',stagger:.15},'<');
+    .from('.float',{y:30,scale:.9,opacity:0,duration:.8,ease:'back.out(1.6)',stagger:.15},'-=.6');
   gsap.to('.f1',{y:-12,duration:2.6,yoyo:true,repeat:-1,ease:'sine.inOut',delay:3});
   gsap.to('.f2',{y:10,duration:3.1,yoyo:true,repeat:-1,ease:'sine.inOut',delay:3});
 
